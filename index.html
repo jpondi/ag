@@ -291,12 +291,14 @@
       $("#hymns-tab").load("files/Hindex.html");
       $("#choruses-tab").load("files/Cindex.html");
       // $("#all-tab").load("files/Allindex.txt");
-      Promise.all([
-        $.get("files/Aindex2.html"),
-        $.get("files/Hindex.html"),
-        $.get("files/Cindex.html")
-      ]).then(function (results) {
-        $("#all-tab").html(results.join("<hr>"));
+      $("#all-tab").empty(); // Clear existing content
+
+      $.get("files/Aindex2.html", function (data1) {
+        $.get("files/Hindex.html", function (data2) {
+          $.get("files/Cindex.html", function (data3) {
+            $("#all-tab").html(data1 + "<hr>" + data2 + "<hr>" + data3);
+          });
+        });
       });
       $("#search-items ul").load("files/Allindex2.txt");
 
