@@ -1,0 +1,14 @@
+ Be still and know that I am God. (3)
+ I am the Lord that healeth thee. (3)
+  <author></author>
+  <copyright></copyright>
+  <ccli></ccli>
+  <capo print="false"></capo>
+  <key></key>
+  <aka></aka>
+  <key_line></key_line>
+  <user1></user1>
+  <user2></user2>
+  <user3></user3>
+  <theme></theme>
+  <tempo></tempo>

@@ -1,0 +1,16 @@
+ Ev'ry promise in the Book is mine,
+ Ev'ry chapter, ev'ry verse, ev'ry line;
+ All are blessings of His love divine,
+ Ev'ry promise in the Book is mine.
+  <author></author>
+  <copyright></copyright>
+  <ccli></ccli>
+  <capo print="false"></capo>
+  <key></key>
+  <aka></aka>
+  <key_line></key_line>
+  <user1></user1>
+  <user2></user2>
+  <user3></user3>
+  <theme></theme>
+  <tempo></tempo>
