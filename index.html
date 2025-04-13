@@ -296,7 +296,9 @@
       $.get("files/Aindex2.html", function (data1) {
         $.get("files/Hindex.html", function (data2) {
           $.get("files/Cindex.html", function (data3) {
-            $("#all-tab").html(data1 + "<hr>" + data2 + "<hr>" + data3);
+            $.get("Vindex.html", function (data4) {
+              $("#all-tab").html(data1 + "<hr>" + data2 + "<hr>" + data3 + "<hr>" + data4);
+            });
           });
         });
       });
