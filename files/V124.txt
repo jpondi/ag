@@ -1,0 +1,9 @@
+Say hello		(echo)
+Say ola			(echo)
+Say jumbo		(echo)
+Bondiya		(echo)
+Aloha			(echo)
+Namaste		(echo)
+Say shalom		(echo) Ikiniheva
+We have come in the name of the Lord
+To share with You His holy word
