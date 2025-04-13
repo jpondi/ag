@@ -200,6 +200,7 @@
     <button class="tablinks" id="telugu-link">Telugu</button>
     <button class="tablinks" id="hymns-link">Hymns</button>
     <button class="tablinks" id="choruses-link">Choruses</button>
+    <button class="tablinks" id="vbs-link">VBS</button>
     <button class="tablinks" id="all-link">All</button>
   </div>
 
@@ -219,6 +220,11 @@
   <div class="px-3 pfont1" id="Choruses" class="1tabcontent">
     <h3 class="pt-3">Choruses</h3>
     <ul class="songs pfont1 list-unstyled" id="choruses-tab"></ul>
+  </div>
+
+  <div class="px-3 pfont1" id="VBS" class="1tabcontent">
+    <h3 class="pt-3">VBS Songs</h3>
+    <ul class="songs pfont1 list-unstyled" id="vbs-tab"></ul>
   </div>
 
   <div class="px-3 pfont1" id="All" class="1tabcontent">
@@ -279,6 +285,7 @@
           $("#Telugu").hide();
           $("#Hymns").hide();
           $("#Choruses").hide();
+          $("#VBS").hide();
           $("#All").hide();
           $("#hymnsubmit").click();
           
@@ -310,6 +317,7 @@
       $("#Telugu").hide();
       $("#Hymns").hide();
       $("#Choruses").hide();
+      $("#VBS").hide();
       $("#All").hide();
      
 
@@ -318,6 +326,7 @@
         $("#Telugu").toggle();
         $("#Hymns").hide();
         $("#Choruses").hide();
+        $("#VBS").hide();
         $("#All").hide();
 
 
@@ -330,6 +339,7 @@
           $("#Telugu").hide();
           $("#Hymns").hide();
           $("#Choruses").hide();
+          $("#VBS").hide();
           $("#All").hide();
         });
 
@@ -337,11 +347,14 @@
 
 
       });
+
+
       $("#hymns-link").click(function () {
 
         $("#Telugu").hide();
         $("#Hymns").toggle();
         $("#Choruses").hide();
+        $("#VBS").hide();
         $("#All").hide();
 
         $(".index-page-link").click(function () {
@@ -352,16 +365,43 @@
           $("#Telugu").hide();
           $("#Hymns").hide();
           $("#Choruses").hide();
+          $("#VBS").hide();
           $("#All").hide();
         });
 
       });
+
+
       $("#choruses-link").click(function () {
 
 
         $("#Telugu").hide();
         $("#Hymns").hide();
         $("#Choruses").toggle();
+        $("#All").hide();
+
+
+        $(".index-page-link").click(function () {
+          var sno2 = $(this).attr('id');
+          var filepath2 = 'files/' + sno2.replace('#', '') + '.txt';
+          $("#hymnpage").load(filepath2);
+
+          $("#Telugu").hide();
+          $("#Hymns").hide();
+          $("#Choruses").hide();
+          $("#VBS").hide();
+          $("#All").hide();
+        });
+      });
+
+
+      $("#vbs-link").click(function () {
+
+
+        $("#Telugu").hide();
+        $("#Hymns").hide();
+        $("#Choruses").hide();
+        $("#VBS").toggle();
         $("#All").hide();
 
 
@@ -383,6 +423,7 @@
         $("#Telugu").hide();
         $("#Hymns").hide();
         $("#Choruses").hide();
+        $("#VBS").hide();
         $("#All").toggle();
 
 
@@ -394,6 +435,7 @@
           $("#Telugu").hide();
           $("#Hymns").hide();
           $("#Choruses").hide();
+          $("#VBS").hide();
           $("#All").hide();
         });
       });
