@@ -255,6 +255,7 @@
 
   <!-- #MainPage -->
   <div class="container-fluid p-0 m-0">
+    <pre class="preag p-0 m-0 ml-3 my-3" id="hymnno" style="font-family: 'Timmana', sans-serif; height:auto; overflow: visible;"> </pre>
     <pre class="preag p-0 m-0 ml-3 my-3" id="hymnpage" style="font-family: 'Timmana', sans-serif; height:auto; overflow: visible;"> </pre>
   </div>
   <!-- #end MainPage -->
@@ -335,6 +336,7 @@
         $(".index-page-link").click(function () {
           var sno2 = $(this).attr('id');
           var filepath2 = 'files/' + sno2.replace('#', '') + '.txt';
+          $("#hymnno").html('<div class="loading-message">' + sno2 + '</div>').show();
           $("#hymnpage").load(filepath2);
 
           $("#Telugu").hide();
