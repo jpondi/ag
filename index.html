@@ -140,9 +140,25 @@
     <!-- <label class="h5 p-0 m-0">Search</label> -->
     <input class="h5  p-0 m-0" id="hymn_input" type="text" value="" placeholder="Song No / Search">
     <button class="h5 px-3 pt-0 pb-0 m-0 mt-n1 btn btn-dark" id="hymnsubmit">Go</button>
+    <button class="h5 px-3 pt-0 pb-0 m-0 mt-n1 btn btn-outline-secondary" id="clearInput">Clear</button>
      <div   id="search-items"> <ul class="songs pfont1 list-unstyled"></ul></div> 
   </div>
   <!-- #end Submit -->
+  <script>
+    // Add this JavaScript to handle the clear functionality
+    $(document).ready(function() {
+        $('#clearInput').click(function() {
+           // Clear the input field
+            $("#hymn_input").val('');
+            
+            // Trigger the same keyup event that handles filtering
+            $("#hymn_input").trigger("keyup");
+            
+            // Optional: Return focus to the input field
+            $("#hymn_input").focus();
+        });
+    });
+    </script>
 
   <!-- # Index -->
   <style>
